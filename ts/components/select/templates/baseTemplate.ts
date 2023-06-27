@@ -14,6 +14,7 @@ export default (slot: string) => `
     x-on:click="!option.readonly && select(option)"
     x-on:keydown.enter="!option.readonly && select(option)"
     select-option>
+
     ${slot}
 
     <template x-if="selectedOptions.includes(option) || option.isSelected || selected === option">
